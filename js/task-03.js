@@ -18,7 +18,7 @@ const itemDocGallery = document.querySelector("#gallery");
 function createList(images) {
   return images
     .map(({ url, alt }) => {
-      return `<li class="site-nav"><img class="site-img" src="${url}" alt="${alt}"></li>`;
+      return `<li class="site-nav"><img class="site-img" src="${url}" alt="${alt}" width = 600 height = 400></li>`;
     })
     .join("");
 }
