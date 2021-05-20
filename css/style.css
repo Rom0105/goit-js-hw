@@ -1,0 +1,13 @@
+#gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
+.site-img {
+  width: 600px;
+  height: 400px;
+}
+
+.site-nav {
+  list-style-type: none;
+}
