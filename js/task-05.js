@@ -1,8 +1,10 @@
 const inputDoc = document.querySelector("#name-input");
 const spanDoc = document.querySelector("#name-output");
 
-inputDoc.addEventListener("input", nameInput);
-
-function nameInput(event) {
-  spanDoc.textContent = event.currentTarget.value;
-}
+inputDoc.oninput = function () {
+  if (inputDoc.value === "") {
+    spanDoc.textContent = "незнакомец";
+  } else {
+    spanDoc.textContent = inputDoc.value;
+  }
+};
